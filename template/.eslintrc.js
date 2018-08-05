@@ -43,6 +43,7 @@ module.exports = {
   {{/if_eq}}
   // add your custom rules here
   rules: {
+    'semi': ['error', 'never'],
     {{#if_eq lintConfig "standard"}}
     // allow async-await
     'generator-star-spacing': 'off',
@@ -63,6 +64,8 @@ module.exports = {
         'e' // for e.returnvalue
       ]
     }],
+    'comma-dangle': ['error', 'always-multiline'],
+    'indent': ['error', 2],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       optionalDependencies: ['test/unit/index.js']

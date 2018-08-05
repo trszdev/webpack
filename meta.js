@@ -112,11 +112,6 @@ module.exports = {
       message: 'Pick a test runner',
       choices: [
         {
-          name: 'Jest',
-          value: 'jest',
-          short: 'jest',
-        },
-        {
           name: 'Karma and Mocha',
           value: 'karma',
           short: 'karma',
